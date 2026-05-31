@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Durga Sweets & Bakery | Authentic Andhra Pickles & Podulu, Kurnool</title>
+  <meta name="description" content="Authentic Andhra pickles, aromatic podulu, and bakery items handcrafted in Kurnool. Fresh, home-style recipes, zero preservatives. Order online via WhatsApp.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+    <a href="#" onclick="closeMobileMenu()">Home</a>
+    <a href="#shop" onclick="closeMobileMenu(); setCategoryTab('all')">Shop All</a>
+    <a href="#shop" onclick="closeMobileMenu(); setCategoryTab('veg')">Veg Pickles</a>
+    <a href="#shop" onclick="closeMobileMenu(); setCategoryTab('nonveg')">Non Veg Pickles</a>
+    <a href="#shop" onclick="closeMobileMenu(); setCategoryTab('podi')">Podulu</a>
+    <a href="#about" onclick="closeMobileMenu()">Our Story</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Sri Durga Sweets &amp; Bakery Home">
+        <svg class="logo-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="red-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#E8640A" />
+              <stop offset="50%" stop-color="#DC2626" />
+              <stop offset="100%" stop-color="#991B1B" />
+            </linearGradient>
+            <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#FFFDF5" />
+              <stop offset="30%" stop-color="#FBBF24" />
+              <stop offset="100%" stop-color="#D97706" />
+            </linearGradient>
+            <linearGradient id="blue-border" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1E3A8A" />
+              <stop offset="50%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#1E3A8A" />
+            </linearGradient>
+            <linearGradient id="gold-border" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FBBF24" />
+              <stop offset="100%" stop-color="#D97706" />
+            </linearGradient>
+            <filter id="drop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+              <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+            </filter>
+          </defs>
+          <g filter="url(#drop-shadow)">
+            <path d="M 200 12 L 252 64 L 200 116 L 148 64 Z" fill="#FFFFFF" stroke="url(#red-gradient)" stroke-width="3" stroke-linejoin="round" />
+            <path d="M 200 19 L 245 64 L 200 109 L 155 64 Z" fill="#FFFFFF" stroke="url(#gold-border)" stroke-width="1.5" stroke-linejoin="round" />
+            <text x="200" y="38" font-family="'DM Sans', sans-serif" font-weight="700" fill="#B54D05" font-size="8" letter-spacing="1.5" text-anchor="middle">RVR</text>
+            <text x="198" y="78" font-family="'Playfair Display', serif" font-style="italic" font-weight="900" fill="url(#red-gradient)" font-size="38" text-anchor="middle">SD</text>
+            <path d="M 166 94 Q 200 104 234 94" fill="none" stroke="url(#red-gradient)" stroke-width="8" stroke-linecap="round" />
+            <path d="M 166 94 Q 200 104 234 94" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+            <text x="200" y="99" font-family="'DM Sans', sans-serif" font-weight="800" fill="#DC2626" font-size="6" letter-spacing="0.5" text-anchor="middle">SINCE 1989</text>
+            <rect x="35" y="95" width="330" height="84" rx="42" fill="url(#blue-border)" />
+            <rect x="39" y="99" width="322" height="76" rx="38" fill="url(#red-gradient)" stroke="#FFFFFF" stroke-width="1.5" />
+            <rect x="44" y="104" width="312" height="66" rx="33" fill="none" stroke="url(#gold-border)" stroke-width="1.5" opacity="0.8" />
+            <text x="200" y="142" font-family="'Playfair Display', serif" font-weight="900" fill="url(#gold-gradient)" font-size="34" filter="drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4))" text-anchor="middle">Sri Durga</text>
+            <text x="200" y="159" font-family="'DM Sans', sans-serif" font-weight="800" fill="#FFFFFF" letter-spacing="3" font-size="11" filter="drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3))" text-anchor="middle">SWEETS &amp; BAKERY</text>
+          </g>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#shop" onclick="setCategoryTab('all')">Shop</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="cart-btn" onclick="openCartDrawer()">
+          🛒 Cart (<span class="cart-count-badge">0</span>)
+        </button>
+        <button class="hamburger" onclick="openMobileMenu()">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">🌶️ Authentic Andhra Flavours</div>
+        <h1>Taste the <em>Tradition</em><br>of Kurnool</h1>
+        <p>Handcrafted pickles, aromatic podulu, and traditional bakery delights made with age-old recipes passed down through generations. Fresh, natural, no preservatives.</p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn-primary" onclick="setCategoryTab('all')">Shop Online</a>
+          <a href="#about" class="btn-outline">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="images/storefront.jpg" alt="Sri Durga Sweets Kurnool storefront showcase" class="hero-showcase-img">
+        <div class="hero-floating-badge">
+          <span class="badge-icon">⭐</span>
+          <div class="badge-text">
+            <strong>4.9/5 Rating</strong>
+            <span>From 2,000+ Customers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item"><span>🚚</span> Free Delivery above ₹499</div>
+      <div class="trust-item"><span>🏡</span> Home-style Recipes</div>
+      <div class="trust-item"><span>🌿</span> No Preservatives</div>
+      <div class="trust-item"><span>⭐</span> Trusted Since Years</div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES PREVIEW SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Browse Categories</div>
+        <h2>What We Make Best</h2>
+        <p>Three iconic categories, all crafted with love and the finest local ingredients from Kurnool, Andhra Pradesh.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="#shop" class="cat-card veg" onclick="setCategoryTab('veg')">
+          <div class="cat-img-wrapper">
+            <img src="images/veg_pickle_user.jpg" alt="Veg Pickles" class="cat-img">
+          </div>
+          <h3>Veg Pickles</h3>
+          <p>Mango, tomato, lemon, gongura and more varieties.</p>
+          <span class="cat-link">Explore →</span>
+          <span class="cat-count" id="countVeg">12</span>
+        </a>
+        <a href="#shop" class="cat-card nonveg" onclick="setCategoryTab('nonveg')">
+          <div class="cat-img-wrapper">
+            <img src="images/non_veg_pickle_user.jpg" alt="Non Veg Pickles" class="cat-img">
+          </div>
+          <h3>Non Veg Pickles</h3>
+          <p>Chicken, mutton, prawns — spiced to perfection.</p>
+          <span class="cat-link">Explore →</span>
+          <span class="cat-count" id="countNonveg">3</span>
+        </a>
+        <a href="#shop" class="cat-card podi" onclick="setCategoryTab('podi')">
+          <div class="cat-img-wrapper">
+            <img src="images/podi_category_user.jpg" alt="Podulu" class="cat-img">
+          </div>
+          <h3>Podulu</h3>
+          <p>Idli karam, kandi podi, kobbari and more blends.</p>
+          <span class="cat-link">Explore →</span>
+          <span class="cat-count" id="countPodi">11</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SHOP SECTION (SEARCH, FILTERS, GRID) -->
+  <section class="section section-alt" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">🏪 Sri Durga Store</div>
+        <h2>Freshly Handcrafted for You</h2>
+        <p>Order fresh Andhra pickles and spice powders, customized to your sizing needs and shipped directly to your doorstep.</p>
+      </div>
+
+      <!-- Shop Controls -->
+      <div class="shop-controls">
+        <div class="shop-search-wrapper">
+          <span class="shop-search-icon">🔍</span>
+          <input type="text" id="shopSearch" class="shop-search-input" placeholder="Search pickles, podulu...">
+        </div>
+
+        <div class="shop-tabs">
+          <button class="shop-tab active" data-cat="all" onclick="setCategoryTab('all')">All Products</button>
+          <button class="shop-tab" data-cat="veg" onclick="setCategoryTab('veg')">Veg Pickles</button>
+          <button class="shop-tab" data-cat="nonveg" onclick="setCategoryTab('nonveg')">Non Veg Pickles</button>
+          <button class="shop-tab" data-cat="podi" onclick="setCategoryTab('podi')">Podulu (Spice Blends)</button>
+        </div>
+
+        <div class="shop-sort-wrapper">
+          <label for="shopSort">Sort By:</label>
+          <select id="shopSort" class="shop-sort-select">
+            <option value="recommended">Recommended</option>
+            <option value="low-to-high">Price: Low to High</option>
+            <option value="high-to-low">Price: High to Low</option>
+            <option value="name-a-z">Name: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="unifiedProductGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="storefront-card">
+            <img src="images/storefront.jpg" alt="Sri Durga Sweets storefront" class="storefront-img">
+            <div class="storefront-overlay">
+              <div class="storefront-title">Our Physical Store in Kurnool</div>
+              <div class="storefront-subtitle">📍 Kurnool, Andhra Pradesh</div>
+            </div>
+          </div>
+          <div class="about-stat">
+            <span class="num">30+</span>
+            <label>Products</label>
+          </div>
+          <div class="about-stat accent">
+            <span class="num">3</span>
+            <label>Store Locations</label>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">About Us</div>
+          <h2>Kurnool's Home of Authentic Taste</h2>
+          <p>Sri Durga Sweets & Bakery has been serving the people of Kurnool with the most authentic Andhra pickles, sweets, and snacks for years. Each recipe is a family secret passed down through generations, combining rich culture with the finest ingredients.</p>
+          <ul class="about-list">
+            <li>Made fresh with locally sourced ingredients</li>
+            <li>No artificial preservatives or colours</li>
+            <li>Traditional stone-ground spice blends</li>
+            <li>Pan-India delivery available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-head" style="text-align: center;">
+        <div class="section-label">Testimonials</div>
+        <h2>What Our Customers Say</h2>
+        <p style="margin: 0 auto;">Loved by families in Kurnool and across India. Here is what they say about our quality.</p>
+      </div>
+      <div class="testimonials-wrapper" id="testimonialsSlider">
+        <!-- Dynamically Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head" style="text-align: center;">
+        <div class="section-label">Frequently Asked Questions</div>
+        <h2>Any Questions? We have Answers</h2>
+        <p style="margin: 0 auto;">Learn more about our ingredients, ordering process, and shelf life.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h3>Do your pickles contain preservatives?</h3>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              No, our pickles are completely free of artificial preservatives, vinegar, or artificial food coloring. We use cold-pressed groundnut oil, salt, and dry spices which act as natural preservatives, just like traditional homemade pickles.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h3>What is the shelf life of your pickles and podulu?</h3>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Our Veg Pickles last for up to 6 months if kept in a cool, dry place and handled with a clean, dry spoon. Non-Veg Pickles are best consumed within 3 months (refrigeration is recommended to retain freshness). Podulu (spice blends) have a shelf life of 4-6 months.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h3>How does the WhatsApp ordering process work?</h3>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Once you add items to the cart and fill in your delivery details, our checkout tool compiles the details and opens a WhatsApp conversation with us. We will confirm your order, calculate delivery estimates, and share GPay/PhonePe details for payment. Once paid, we ship your order!
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h3>Do you ship outside of Kurnool/Andhra Pradesh?</h3>
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-content">
+            <div class="faq-content-inner">
+              Yes, we ship pan-India! We deliver to Hyderabad, Bangalore, Chennai, Mumbai, Pune, and almost all cities across India via reliable courier partners. Shipping is FREE on orders above ₹499.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Get in Touch</div>
+        <h2>Find Us in Kurnool</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Store Location 1</h4>
+          <p>New Bus Stand Rd, Sita Rama Nagar, Kurnool, Andhra Pradesh 518003</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Store Location 2</h4>
+          <p>Road no.1, Ameena Abbas Nagar, Main Road, Venkataramana Colony, Kurnool, AP 518003</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Store Location 3</h4>
+          <p>Shop No. 3, Ground Floor, Lakshmi Nagar Colony, Jampala Narayana Reddy Nagar, Kurnool, AP 518003</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h4>Call or Email</h4>
+          <a href="tel:8328319293">📱 8328319293</a>
+          <p class="hours">Mon – Sat: 10 AM to 7 PM</p>
+          <a href="mailto:tasty.sridurgasweets@gmail.com" style="font-size:12.5px; margin-top:8px; display:block;">✉️ tasty.sridurgasweets@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="margin-bottom:0;" aria-label="Sri Durga Sweets &amp; Bakery Home">
+          <svg class="logo-svg" style="height: 64px;" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="red-gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#E8640A" />
+                <stop offset="50%" stop-color="#DC2626" />
+                <stop offset="100%" stop-color="#991B1B" />
+              </linearGradient>
+              <linearGradient id="gold-gradient-footer" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#FFFDF5" />
+                <stop offset="30%" stop-color="#FBBF24" />
+                <stop offset="100%" stop-color="#D97706" />
+              </linearGradient>
+              <linearGradient id="blue-border-footer" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#1E3A8A" />
+                <stop offset="50%" stop-color="#2563EB" />
+                <stop offset="100%" stop-color="#1E3A8A" />
+              </linearGradient>
+              <linearGradient id="gold-border-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FBBF24" />
+                <stop offset="100%" stop-color="#D97706" />
+              </linearGradient>
+              <filter id="drop-shadow-footer" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+              </filter>
+            </defs>
+            <g filter="url(#drop-shadow-footer)">
+              <path d="M 200 12 L 252 64 L 200 116 L 148 64 Z" fill="#FFFFFF" stroke="url(#red-gradient-footer)" stroke-width="3" stroke-linejoin="round" />
+              <path d="M 200 19 L 245 64 L 200 109 L 155 64 Z" fill="#FFFFFF" stroke="url(#gold-border-footer)" stroke-width="1.5" stroke-linejoin="round" />
+              <text x="200" y="38" font-family="'DM Sans', sans-serif" font-weight="700" fill="#B54D05" font-size="8" letter-spacing="1.5" text-anchor="middle">RVR</text>
+              <text x="198" y="78" font-family="'Playfair Display', serif" font-style="italic" font-weight="900" fill="url(#red-gradient-footer)" font-size="38" text-anchor="middle">SD</text>
+              <path d="M 166 94 Q 200 104 234 94" fill="none" stroke="url(#red-gradient-footer)" stroke-width="8" stroke-linecap="round" />
+              <path d="M 166 94 Q 200 104 234 94" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" />
+              <text x="200" y="99" font-family="'DM Sans', sans-serif" font-weight="800" fill="#DC2626" font-size="6" letter-spacing="0.5" text-anchor="middle">SINCE 1989</text>
+              <rect x="35" y="95" width="330" height="84" rx="42" fill="url(#blue-border-footer)" />
+              <rect x="39" y="99" width="322" height="76" rx="38" fill="url(#red-gradient-footer)" stroke="#FFFFFF" stroke-width="1.5" />
+              <rect x="44" y="104" width="312" height="66" rx="33" fill="none" stroke="url(#gold-border-footer)" stroke-width="1.5" opacity="0.8" />
+              <text x="200" y="142" font-family="'Playfair Display', serif" font-weight="900" fill="url(#gold-gradient-footer)" font-size="34" filter="drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4))" text-anchor="middle">Sri Durga</text>
+              <text x="200" y="159" font-family="'DM Sans', sans-serif" font-weight="800" fill="#FFFFFF" letter-spacing="3" font-size="11" filter="drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3))" text-anchor="middle">SWEETS &amp; BAKERY</text>
+            </g>
+          </svg>
+        </a>
+        <p>Authentic Andhra flavours crafted with love. Home-style pickles, aromatic podulu, and bakery items enjoyed by generations.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sridurgasweetsbakery" target="_blank" class="social-btn">📸</a>
+          <a href="https://www.youtube.com/@sridurgasweetsbakerypickles" target="_blank" class="social-btn">▶️</a>
+          <a href="https://www.facebook.com/sridurgasweetsandbakery/" target="_blank" class="social-btn">👍</a>
+        </div>
+      </div>
+      <div>
+        <h5>Products</h5>
+        <ul>
+          <li><a href="#shop" onclick="setCategoryTab('veg')">Veg Pickles</a></li>
+          <li><a href="#shop" onclick="setCategoryTab('nonveg')">Non Veg Pickles</a></li>
+          <li><a href="#shop" onclick="setCategoryTab('podi')">Podulu (Spices)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Policies</h5>
+        <ul>
+          <li><a href="https://sridurgasweets.in/privacy-policy/" target="_blank">Privacy Policy</a></li>
+          <li><a href="https://sridurgasweets.in/terms-and-conditions/" target="_blank">Terms & Conditions</a></li>
+          <li><a href="https://sridurgasweets.in/refund_policy/" target="_blank">Return & Refund</a></li>
+          <li><a href="https://sridurgasweets.in/payment-policy/" target="_blank">Payment & Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:8328319293">📱 8328319293</a></li>
+          <li><a href="mailto:tasty.sridurgasweets@gmail.com">✉️ Email Us</a></li>
+          <li><a href="#">Mon–Sat 10AM–7PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sri Durga Sweets & Bakery, Kurnool. All rights reserved.</p>
+      <p>Crafted with ❤️ for authentic Andhra taste</p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="productModal" onclick="closeProductModal()">
+    <div class="modal-wrapper" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeProductModal()">✕</button>
+      <div class="modal-content-grid">
+        <div class="modal-header-visual">
+          <img id="modalImage" src="images/veg_pickle_user.jpg" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="modal-body">
+          <div class="modal-badge-row">
+            <span class="modal-badge" id="modalBadge">Bestseller</span>
+          </div>
+          <h2 id="modalTitle">Product Title</h2>
+          <p class="modal-desc" id="modalDescription">Detailed product description goes here...</p>
+          
+          <div class="modal-section-title">Select Sizing:</div>
+          <div class="size-pills" id="modalSizes">
+            <!-- Rendered by JS -->
+          </div>
+
+          <div class="modal-section-title">Quantity:</div>
+          <div class="qty-stepper">
+            <button onclick="adjustModalQty(-1)">−</button>
+            <span id="modalQty">1</span>
+            <button onclick="adjustModalQty(1)">+</button>
+          </div>
+
+          <div class="modal-footer">
+            <div class="modal-price-col">
+              <span class="modal-section-title">Total Price:</span>
+              <span class="price-tag" id="modalPrice">₹0</span>
+            </div>
+            <button class="btn-primary" id="addToCartSubmit" onclick="addSelectedToCart()">Add to Cart 🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    
+    <div class="drawer-header">
+      <div class="drawer-title-row">
+        <button class="drawer-back-btn" id="drawerBackBtn" onclick="drawerBack()">❮</button>
+        <h2 id="drawerTitle">Your Cart</h2>
+      </div>
+      <button class="drawer-close" onclick="closeCartDrawer()">✕</button>
+    </div>
+
+    <div class="drawer-content">
+      <!-- STEP 1: CART LIST -->
+      <div class="drawer-step active" id="step1">
+        <!-- Free Shipping Progress -->
+        <div class="free-shipping-indicator">
+          <div class="free-shipping-text" id="freeDeliveryText">
+            Spend <strong>₹499</strong> more for <strong>FREE Delivery</strong>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="freeDeliveryProgress"></div>
+          </div>
+        </div>
+        
+        <!-- Cart Items -->
+        <div class="cart-items-list" id="cartItems">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="drawer-footer" style="margin-top:auto;">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">₹0</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery Charges</span>
+            <span id="deliveryCharges">₹0</span>
+          </div>
+          <div class="summary-row total">
+            <span>Grand Total</span>
+            <span id="cartTotal">₹0</span>
+          </div>
+          <button class="btn-primary" style="width:100%" onclick="proceedToCheckout()">Proceed to Checkout ➔</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: DELIVERY INFO -->
+      <div class="drawer-step" id="step2">
+        <form class="checkout-form-container" id="checkoutForm" onsubmit="submitOrderForm(event)">
+          <p class="form-desc">Please share your delivery details. We will format your WhatsApp order automatically.</p>
+          
+          <div class="form-group">
+            <label for="checkoutName">Full Name *</label>
+            <input type="text" id="checkoutName" required placeholder="Enter your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="checkoutPhone">Mobile Number *</label>
+            <input type="tel" id="checkoutPhone" required placeholder="Enter 10-digit number">
+          </div>
+          
+          <div class="form-group full">
+            <label for="checkoutAddress">Delivery Address *</label>
+            <textarea id="checkoutAddress" rows="3" required placeholder="House No, Street, Colony"></textarea>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="checkoutLandmark">Landmark</label>
+              <input type="text" id="checkoutLandmark" placeholder="Near Temple, Shop...">
+            </div>
+            
+            <div class="form-group">
+              <label for="checkoutCity">City / Town *</label>
+              <input type="text" id="checkoutCity" required placeholder="Kurnool">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="checkoutPincode">Pincode *</label>
+            <input type="text" id="checkoutPincode" required pattern="[0-9]{6}" placeholder="6-digit pincode">
+          </div>
+
+          <div class="drawer-footer" style="margin-top:auto; padding: 24px 0 0 0; background:none; border-top:none;">
+            <button type="submit" class="btn-primary" style="width:100%">Proceed to Payment ➔</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- STEP 3: ORDER SUCCESS -->
+      <div class="drawer-step" id="step3">
+        <div class="success-container">
+          <div class="success-icon">✔</div>
+          <h3>Order Details Formatted!</h3>
+          <p>We've prepared your order details (with UPI payment details) and redirected you to WhatsApp. Please hit "Send" in the WhatsApp chat to submit your details.<br><br>We will verify your payment and start preparing your order shortly!</p>
+          <button class="btn-primary" onclick="closeCartDrawer();">Continue Shopping</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHONEPE STYLE PAYMENT GATEWAY MODAL -->
+  <div class="pg-modal-overlay" id="pgModalOverlay" onclick="closePgModal()">
+    <div class="pg-modal-container" onclick="event.stopPropagation()">
+      
+      <!-- Left Column (Order Summary) -->
+      <div class="pg-left-col">
+        <div class="pg-brand-section">
+          <div class="pg-brand-icon">🪔</div>
+          <div class="pg-brand-text">SRI DURGA SWEETS AND BAKERY</div>
+        </div>
+        
+        <div class="pg-total-card">
+          <div class="pg-total-header">
+            <span>Total :</span>
+            <strong id="pgTotalAmount">₹0.00</strong>
+          </div>
+        </div>
+        
+        <div class="pg-powered-by">
+          Powered by <img src="https://img.icons8.com/color/48/phone-pe.png" alt="PhonePe Logo" class="pg-phonepe-logo">
+        </div>
+      </div>
+      
+      <!-- Right Column (Payment Options) -->
+      <div class="pg-right-col">
+        <div class="pg-header">
+          <h3>Payment Options</h3>
+          <button class="pg-close-btn" onclick="closePgModal()">✕</button>
+        </div>
+        
+        <div class="pg-content-grid">
+          <!-- Payment Methods List -->
+          <div class="pg-methods-list">
+            <!-- UPI Method (Active) -->
+            <div class="pg-method-item active" id="method-upi" onclick="selectPgMethod('upi')">
+              <div class="pg-method-indicator"></div>
+              <div class="pg-method-icon">💜</div>
+              <div class="pg-method-details">
+                <h4>UPI</h4>
+                <p>Pay via UPI apps, number or ID</p>
+              </div>
+            </div>
+            
+            <!-- Card Method (Disabled) -->
+            <div class="pg-method-item disabled" id="method-card" onclick="selectPgMethod('card')">
+              <div class="pg-method-indicator"></div>
+              <div class="pg-method-icon">💳</div>
+              <div class="pg-method-details">
+                <h4>Debit/Credit Card</h4>
+                <p>Visa, MasterCard, RuPay</p>
+              </div>
+            </div>
+            
+            <!-- Net Banking Method (Disabled) -->
+            <div class="pg-method-item disabled" id="method-netbanking" onclick="selectPgMethod('netbanking')">
+              <div class="pg-method-indicator"></div>
+              <div class="pg-method-icon">🏦</div>
+              <div class="pg-method-details">
+                <h4>Net Banking</h4>
+                <p>All major Indian banks</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Payment Action Area -->
+          <div class="pg-action-area">
+            <!-- UPI Section -->
+            <div class="pg-action-section active" id="pgUpiSection">
+              <!-- UPI App logos row placed above/before the QR Card as per screenshot -->
+              <div class="pg-qr-logos">
+                <img src="https://img.icons8.com/color/48/phone-pe.png" alt="PhonePe">
+                <img src="https://img.icons8.com/?size=100&id=7N6Lp6fN5k74&format=png" alt="Google Pay">
+                <img src="https://img.icons8.com/color/48/paytm.png" alt="Paytm">
+                <img src="https://img.icons8.com/?size=100&id=w5oD93YqWb8a&format=png" alt="BHIM">
+                <img src="https://img.icons8.com/?size=100&id=Pto4eHwq6S1c&format=png" alt="UPI">
+              </div>
+
+              <!-- QR Code Card Container -->
+              <div class="pg-qr-container">
+                <div class="pg-qr-header">Scan via any UPI app</div>
+                <div class="pg-qr-image-wrapper">
+                  <a id="pgQrAnchor" href="#" target="_blank" title="Tap to pay via UPI app on your phone">
+                    <img id="pgQrImage" src="" alt="UPI QR Code">
+                  </a>
+                  <!-- Monogram Overlay Centered on the QR Code -->
+                  <div class="pg-qr-center-logo">
+                    <div class="pg-qr-center-circle">
+                      <span>पे</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pg-qr-expiry-pill">
+                  This QR will expire in <span id="pgTimerText">15:00</span>
+                </div>
+              </div>
+              
+              <!-- UTR Verification Block -->
+              <div class="pg-utr-block">
+                <label for="pgUtrInput">Enter 12-Digit UPI Transaction ID (UTR)</label>
+                <input type="text" id="pgUtrInput" maxlength="12" pattern="[0-9]{12}" placeholder="e.g., 619283748293">
+                <button onclick="pgCompletePayment()" class="pg-pay-btn">Confirm Payment via WhatsApp 💬</button>
+              </div>
+            </div>
+            
+            <!-- Mock Section for Cards/Netbanking -->
+            <div class="pg-action-section" id="pgMockSection">
+              <div class="pg-mock-message">
+                <h4>Direct Checkout Unavailable</h4>
+                <p>For instant delivery, please select the **UPI** option on the left. It supports GPay, PhonePe, Paytm, and has 0% transaction fees.</p>
+                <button onclick="selectPgMethod('upi')" class="btn-primary" style="margin-top:16px; padding: 8px 16px; font-size:12px;">Pay via UPI</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer Timeout Banner -->
+        <div class="pg-footer-timeout">
+          ⚠️ This page will timeout in <span id="pgTimeoutText">15:00</span> mins
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- FLOATING ACTION WHATSAPP CHAT BUTTON -->
+  <a href="https://wa.me/918328319293?text=Hello%21%20I%20have%20a%20question%20about%20your%20pickles%20and%20bakery%20products." 
+     target="_blank" 
+     class="whatsapp-float" 
+     title="Chat with us on WhatsApp"
+     aria-label="Chat with us on WhatsApp">
+    💬
+  </a>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
